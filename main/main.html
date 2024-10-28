@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="#"><img src="img/logs.png"></a>
+            <div class="nav-links" id="navLinks">
+                <ion-icon class="close" name="close-outline" onclick="hideMenu()"></ion-icon>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="/history/main.html">HISTORY</a></li>
+                    <li><a href="/STORE/main.html">GALLERY</a></li>
+                    <li><a href="/result/main.html">RESULT</a></li>
+                    <li><a href="/contact/main.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <ion-icon class="menu" name="menu-outline" onclick="showMenu()"></ion-icon>
+        </nav>
+    <div class="text-box">
+        <h1>Welcome To The Rice Place</h1>
+        <p>The rice place is your one-stop shop for all your rice needs. From fragrant Jasmine rice to hearty brown rice, we have a variety of options to suit every taste. Our high-quality grains are sourced from <br>the finest producers, ensuring freshness and deliciousness with every bite. Come visit us today and discover the perfect rice for your next meal.</p>
+        <a href="/store/main.html" class="hero-btn">Get Started</a>
+    </div>
+    </section>
+</body>
+<!-- js toggle menu -->
+ <script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+ </script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>

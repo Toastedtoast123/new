@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", serif;
+}
+.header{
+    min-height: 10vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(../main/img/store.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 120px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.main-detail{
+    margin: 10px auto;
+    width: 80%;
+}
+.main-icon{
+    background: black;
+    color: white;
+    padding: 30px;
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.detail-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    width: 100%;
+    margin-top: 1rem;
+    gap: 2%;
+    border-radius: 8px;
+}
+.cart{
+    font-size: 30px;
+}
+.detail-card{
+    margin: auto;
+    min-height: 280px;
+    height: 100%;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    margin: 1% 0;
+    box-shadow: rgba(176, 176, 176, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+}
+.detail-img{
+    width: 100%;
+    width: 280px;
+    height: 180px;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.8);
+}
+.detail-desc{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+.detail-sub{
+    font-size: 12px;
+    color: var(--darkGreyColor);
+    letter-spacing: 0.5;
+    margin: 1% 0;
+}
+.price{
+    padding: 6px;
+    color: white;
+    background: black;
+    border: none;
+    width: 108%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.price:hover{
+    background: gray;
+}
+.detail-favorites{
+    font-size: 24px;
+}
+.detail-card:hover{
+    box-shadow: rgba(149, 157,165, 0.1) 0px 8px 24px;
+}
+.detail-card:hover .detail-img{
+    filter: opacity(1);
+}
+.detail-card:hover .detail-name h4:hover{
+    color: gray;
+}
+.detail-card:hover .price{
+    letter-spacing: 1.5;
+}
